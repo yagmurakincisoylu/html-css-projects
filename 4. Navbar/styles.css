@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+:root {
+    --background: rgba(255, 102, 99, .7);
+    --content-background: #545C52;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.content {
+    height: 200vh;
+    background-image: url(//unsplash.it/1000/1000);
+    background-color: var(--content-background);
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: var(--background);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: black 2px solid;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 3em;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    height: .2em;
+    display: block;
+    background: #ffffff;
+    width: 3em;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    top: 10px;
+}
+
+.nav-toggle-label span::after{
+    bottom: 10px;
+}
+
+nav {
+    position: absolute;
+    background: var(--background);
+    width: 100%;
+    top: 100%;
+    left: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 250ms ease-in-out 100ms;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+nav li:last-child {
+    margin-bottom: .5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5em .5em .5em 0;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--content-background);
+}   
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(500px, 1fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3/ 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        margin-left: 2em;
+        position: relative;
+    }
+
+    nav a {
+        opacity: 1;
+        padding: 0;
+    }
+
+    nav a::before,
+    nav a::after {
+        content: "";
+        display: block;
+        background-color: var(--content-background);
+        height: .3em;
+        position: absolute;
+        width: 100%;
+        transform: scale(1, 0);
+        transition: transform 350ms ease-in-out 5ms;
+    }
+
+    nav a::before {
+        top: -.7em;
+        transform-origin: bottom;
+    }
+
+    nav a::after {
+        bottom: -.7em;
+        transform-origin: top;
+    }
+
+    nav a:hover::before,
+    nav a:hover::after {
+        transform: scale(1, 1);
+    }
+}
