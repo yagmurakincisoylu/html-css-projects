@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@800&family=Roboto:wght@400;800&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: #0E6C69;
+    margin: 1em 1em 0 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 800;
+    letter-spacing: .3rem;
+}
+
+div {
+    margin: 1em;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    background: #F7DBA7;
+    color: #073635;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    margin: 2em;
+}
+
+.button-one {
+    border: 4px solid;
+    transition: all ease-in-out 250ms;
+}
+
+.button-one:hover,
+.button-one:focus {
+    outline: 2px solid;
+    outline-offset: -12px;
+
+}
+
+.button-two {
+    outline: 3px solid;
+}
+
+.button-two:hover,
+.button-two:focus {
+    color: #0E6C69;
+    outline-offset: -8px;
+}
+
+.button-three {
+    outline: 3px solid;
+    outline-offset: -12px;
+    transition: all ease-in-out 250ms;
+    border: 3px solid;
+}
+
+.button-three:hover,
+.button-three:focus {
+    color: #0E6C69;
+    outline-offset: -3px;
+}
+
+.button-four {
+    outline: 5px solid;
+    outline-offset: 10px;
+    transition: all ease-in-out 250ms;
+}
+
+.button-four:hover,
+.button-four:focus {
+    outline-offset: 0;
+}
+
+.button-five {
+    border: 3px solid;
+    transition: all ease-in-out 250ms;
+}
+
+.button-five:hover,
+.button-five:focus {
+    outline: 5px solid #F7DBA7;
+    outline-offset: 10px;
+    border: 3px solid #F7DBA7;
+}
+
