@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .10);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:hover,
+nav li:focus {
+    background: #444444;
+}
+
+nav a {
+    color: #444444;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75em 1.75em;
+}
+
+nav li:hover a,
+nav li:focus a {
+    color: #ffffff;
+}
+
+nav li:hover .menu-sub,
+nav li:focus .menu-sub {
+    display: block;
+}
+
+.menu-sub {
+    position: absolute;
+    left: 0;
+    background: #444444;
+    width: 100%;
+    display: none;
+    color: #ffffff;
+    padding: 2em;
+}
+
+.menu-sub li {
+    display: block;
+}
+
+.menu-sub a {
+    color: #ffffff;
+    padding: 0;
+    margin-bottom: .35em;
+}
+
+.menu-sub a:hover {
+    text-decoration: underline;
+}
+
+.menu-ctgry {
+    margin: 2.5em 0 .5em;
+}
+
+.menu-ctgry:first-of-type {
+    margin-top: 0;
+}
+
+.menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4 {
+    float: left;
+}
+
+.menu-col-1 {
+    width: 25%;
+}
+
+.menu-col-2 {
+    width: 33.33333%;
+}
+
+.menu-col-3 {
+    width: 33.33333%;
+}
+
+.menu-col-4 {
+    width: 50%;
+}
