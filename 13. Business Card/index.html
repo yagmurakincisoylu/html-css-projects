@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/875dff3299.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Business Card</title>
 </head>
 <body>
-    <div class="container">
-        <img src="profile-img.PNG" alt="profile image">
-        <h1>Yagmur Akincisoylu</h1>
-        <p>Frontend Developer</p>
-        <h2>Munich, Germany</h2>
+    <div class="card flex-container">
+        <div class="flex-item">
+            <img src="profile-img.PNG" alt="profile image" class="profile-img">
+        </div>
+        <hr>
+        <div class="flex-item">
+            <h1>Yagmur Akincisoylu</h1>
+            <p>Frontend Developer</p>
+            <h2>Munich, Germany</h2>
+            <div>
+                <ul class="social-links flex-container">
+                    <li><a href="https://github.com/yagmurakincisoylu" class="social-link" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nigar-yagmur-akincisoylu-venedikoglu-547894200/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://codepen.io/yagmurakincisoylu" class="social-link" target="_blank"><i class="fa-brands fa-codepen"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
