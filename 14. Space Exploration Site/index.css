@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+}
+
+h1,
+p {
+    margin-bottom: 0;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #a9d2fd;
+    background-color: #081018;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.hero {
+    margin: 0;
+    padding: 2.5em;
+    background: #0f0e0e url(/images/galaxy.webp) no-repeat;
+    background-size: cover;
+}
+
+#main-logo {
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.title {
+    text-shadow: 0 0 4px #000000;
+}
+
+.btn {
+    border: none;
+    padding: .5em 1em;
+    margin-top: 1.5em;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transform: scale(1);
+    font-family: inherit;
+    color: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+}
+
+.underline {
+    border-bottom: 5px solid #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
