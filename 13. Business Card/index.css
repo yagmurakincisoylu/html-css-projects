@@ -8,3 +8,97 @@ img {
     min-height: auto;
 }
 
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(50, 48, 59, 0.95);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.card {
+    padding: 2em 1em;
+    max-width: 600px;
+    min-width: 500px;
+    margin: 5em auto 0;
+    background-color: #ddebf8;
+    border-bottom: 10px solid #d8cefe;
+    border-right: 10px solid #a498d1;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    max-width: 45%;
+}
+
+.profile-img {
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+hr {
+    position: relative;
+    height: 250px;
+    width: 6px;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 2.5em;
+    background-image: linear-gradient(0deg,
+                hsl(252deg 96% 90%) 0%,
+                hsl(253deg 80% 88%) 11%,
+                hsl(253deg 69% 86%) 22%,
+                hsl(253deg 61% 84%) 33%,
+                hsl(253deg 55% 81%) 44%,
+                hsl(253deg 50% 79%) 56%,
+                hsl(253deg 47% 77%) 67%,
+                hsl(253deg 43% 75%) 78%,
+                hsl(253deg 41% 73%) 89%,
+                hsl(253deg 38% 71%) 100%);
+}
+
+.social-links {
+    list-style: none;
+    justify-content: start;
+    column-gap: .7em;
+    font-size: 1.5rem;
+    margin: 1em 0 0;
+    padding: 0;
+}
+
+.social-link {
+    padding: .3em;
+    color: rgba(50, 48, 59, 0.95);
+}
+
+.social-links li:hover .social-link,
+.social-links li:focus .social-link {
+    color: #a498d1;
+}
