@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-height: auto;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    font-weight: 300;
+    font-size: 1rem;
+    background-image: linear-gradient(160deg,
+                hsl(180deg 41% 57%) 0%,
+                hsl(173deg 45% 59%) 11%,
+                hsl(164deg 47% 61%) 22%,
+                hsl(152deg 47% 65%) 33%,
+                hsl(134deg 46% 69%) 44%,
+                hsl(108deg 47% 71%) 56%,
+                hsl(86deg 53% 69%) 67%,
+                hsl(69deg 57% 68%) 78%,
+                hsl(54deg 68% 68%) 89%,
+                hsl(44deg 100% 73%) 100%);
+    color: rgba(255, 255, 255, .95);
+    text-shadow: 0 0 2px #0e5153;
+}
+
+.flex-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    min-height: 100vh;
+}
+
+.cta {
+    text-transform: uppercase;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    color: #ffda75;
+    border-bottom: 4px solid;
+}
+
+.person-image {
+    margin: 2em auto;
+    border-radius: 1000px;
+    max-width: 80%;
+    border: 7px #ffda75 solid;
+    transform: scale(1);
+    transition: transform ease-in-out 250ms;
+}
+
+.person-image:hover {
+    transform: scale(1.1);
+}
+
+.gift-section {
+    margin-bottom: 10em;
+}
+
+#bday-age,
+#bday-date {
+    background-color: #ffda75;
+    padding: .5em 1em;
+    color: #2f8d8d;
+    border-radius: 1000px;
+    text-shadow: none;
+    font-weight: 600;
+}
+
+.bday-gift-box {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 7px #ffda75 solid;
+    background: #ffffff url("/bday-gift.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#happy-box:hover {
+    background-image: url("https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif");
+}
+
+#hot-box:hover {
+    background-image: url("https://media.giphy.com/media/JwLY4ToQwe4yA/giphy.gif");
+}
+
+#smart-box:hover {
+    background-image: url("https://media.giphy.com/media/DxwZPl7FRlqWDTruc7/giphy.gif");
+}
+
+#badass-box:hover {
+    background-image: url("https://media.giphy.com/media/3ov9jWu7BuHufyLs7m/giphy.gif");
+}
+
+.darker-text-color {
+    color: #2f8d8d;
+    text-shadow: none;
+}
+
+#badass-box,
+#gift-box {
+    border-color: #64bebe;
+}
+
+#gift-box {
+    height: 400px;
+    background-position: top;
+}
+
+#gift-box:hover {
+    background-image: url("https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif");
+    background-position: center;
+}
