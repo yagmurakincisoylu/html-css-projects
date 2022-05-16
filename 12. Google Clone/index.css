@@ -1,4 +1,4 @@
-*,**::after,*::before {
+*, **::after, *::before {
     box-sizing: border-box;
 }
 
@@ -14,30 +14,132 @@ body {
     font-size: 1rem;
     font-family: arial, sans-serif;
     font-weight: 300;
-    color: #2c2c2c;
+    color: #3c4043;
+}
+
+.grid-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 80% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-small-gap {
+    column-gap: .35em;
+}
+
+.flex-big-gap {
+    column-gap: 1.15em;
+}
+
+nav {
+    margin: .35em .9em 0 1.65em;
+}
+
+nav ul {
+    font-size: .85rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-right-group {
+    font-size: .8rem;
+    margin-left: auto;
+    column-gap: 1.22em;
+}
+
+.nav-left-group {
+    margin-right: auto;
+    column-gap: 1.45em;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #202124;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: underline;
+}
+
+.profile-img {
+    border-radius: 1000px;
+    border: transparent solid 4px;
+}
+
+.google-apps-menu {
+    border: transparent solid 4px;
+    border-radius: 1000px;
+}
+
+.google-apps-menu:hover .menu-icon,
+.google-apps-menu:focus .menu-icon {
+    background-color: rgba(60, 64, 67, .08);
+}
+
+.profile-img:hover,
+.profile-img:focus {
+    border: rgba(60, 64, 67, .08) solid 4px;
 }
 
 .container {
-    margin: 15em auto 0;
-    max-width: 700px;
+    margin: 10.5em auto 0;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.logo-img {
+    width: 272px;
+    height: 92px;
+}
+
 .input-container {
-    width: 100%;
-    margin-top: 3em;
-    border: 1.5px solid #cccccc;
+    width: 96.5%;
+    margin-top: 1.6em;
+    border: 1.5px solid #dfe1e5;
     border-radius: 99px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.input-container:hover,
+.input-container:focus {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+    border-color: #ffffff;
 }
 
 .search-input {
     width: 80%;
-    padding: 1em;
+    padding: .67em 1em;
     outline: none;
     border: none;
     background-color: transparent;
@@ -47,31 +149,96 @@ body {
 }
 
 i {
-    font-size: 1.5rem;
-    color: #cccccc;
+    color: #5f6368;
+}
+
+.menu-icon {
+    width: 45%;
+    border-radius: 1000px;
+    border: transparent solid 11px;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+.mic-icon {
+    margin-right: .8em;
+    cursor: pointer;
+}
+
+.search-icon {
+    margin-left: .8em;
+    opacity: .4;
 }
 
 .button-container {
-    margin-top: 1em;
+    margin-top: 1.9em;
     width: 100%;
     display: flex;
     justify-content: center;
-    column-gap: 1.5em;
+    column-gap: .9em;
 }
 
 .btn {
-    background-color: #ebebeb;
-    padding: .7em 2em;
-    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    padding: .55em 1em;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
-    font-size: 1.05rem;
+    font-size: .9rem;
+    text-align: center;
+    border: 1px solid #f8f9fa;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #cccccc;
+    border: 1px solid #e6e6e6;
 }
 
+.language-text {
+    font-size: small;
+    margin-top: 1.25em;
+}
 
+.language-text a {
+    text-decoration: none;
+    padding: 0 3px;
+}
 
+.language-text a:hover,
+.language-text a:focus {
+    text-decoration: underline;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container * {
+    background: #f2f2f2;
+    color: #70757a;
+    font-size: .9rem;
+}
+
+.row-1,
+.row-2 {
+    padding: 0 2em;
+}
+.row-1 {
+    border-bottom: 1px solid #dadce0;
+}
+
+.row-2 ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.footer-right-group li {
+    margin-left: 2em;
+}
+
+.footer-left-group li {
+    margin-right: 2em;
+}
