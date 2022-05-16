@@ -6,19 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/875dff3299.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-    <title>Google Clone</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <img src="google.png" alt="" class="logo-img">
-        <div class="input-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" class="search-input">
-        </div>
-        <div class="button-container">
-            <button class="btn">Google Search</button>
-            <button class="btn">I'm Feeling Lucky</button>
-        </div>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <ul class="nav-flex">
+                    <div class="nav-flex nav-left-group">
+                        <li><a href="#">About</a></li>
+                        <li class="right"><a href="#">Store</a></li>
+                    </div>
+                    <div class="nav-flex nav-right-group">
+                        <div class="nav-flex flex-big-gap">
+                            <li><a href="#">Gmail</a></li>
+                            <li><a href="#">Images</a></li>
+                        </div>
+                        <div class="nav-flex flex-small-gap">
+                            <li class="google-apps-menu">
+                                <a href="#">
+                                    <i class="fa-solid fa-bars menu-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="profile-img"
+                                        src="https://lh3.googleusercontent.com/ogw/ADea4I7z92S01OJq-ZyYm-bMDNvIh2d2GOpOOFv5zEOu-g=s32-c-mo"
+                                        alt="profile picture">
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container">
+                <img src="google.png" alt="" class="logo-img">
+                <div class="input-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input">
+                    <i class="fa-solid fa-microphone mic-icon"></i>
+                </div>
+                <div class="button-container">
+                    <button class="btn">Google Search</button>
+                    <button class="btn">I'm Feeling Lucky</button>
+                </div>
+                <div class="language-text">
+                    <p>Google offered in: <a href="#">Türkçe</a> <a href="#">Deutsch</a></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <div class="row-1">
+                    <p>Germany</p>
+                </div>
+                <div class="row-2">
+                    <ul>
+                        <div class="nav-flex footer-left-group">
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">How Search works</a></li>
+                        </div>
+                        <div class="nav-flex footer-right-group">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
