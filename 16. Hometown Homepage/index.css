@@ -1,0 +1,158 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --red-clr: #E63946;
+    --green-clr: #e7ffe7;
+    --ligth-clr: #F1FAEE;
+    --aqua-clr: #A8DADC;
+    --lightblue-clr: #457B9D;
+    --darkblue-clr: #1D3557;
+}
+
+img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkblue-clr);
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero section */
+
+.hero-container {
+    background: skyblue url(/images/torshov.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 8.5em;
+    color: var(--ligth-clr);
+}
+
+.title-container {
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.hero-title,
+.hero-subtitle {
+    display: inline-block;
+    padding: .2em .5em;
+    border-radius: 7px;
+}
+
+.hero-title {
+    background-color: var(--lightblue-clr);
+}
+
+.hero-subtitle {
+    background-color: var(--darkblue-clr);
+}
+
+/* activities section */
+
+.activities-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--green-clr);
+}
+
+.activities-title {
+    margin-bottom: 2em;
+    font-size: 1.6rem;
+}
+
+.activity-item {
+    align-self: flex-start;
+    width: 30%;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+.activity-item p {
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.activity-img {
+    margin: 0 auto 1.2em;
+    max-width: 35%;
+    border-radius: 100px;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.activity-img:hover {
+    transform: scale(1.4);
+}
+
+/* guide section */
+
+.card {
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--aqua-clr);
+    max-width: 450px;
+    padding: 1em;
+    border-radius: 8px;
+    border-bottom: 4px solid var(--lightblue-clr);
+    border-right: 4px solid var(--darkblue-clr);
+}
+
+.card-text {
+    flex-direction: column;
+    margin: 1em;
+}
+
+.card-title {
+    font-size: 1.7rem;
+}
+
+.card-text p {
+    font-style: italic;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.guide-name {
+    margin-top: 1em;
+}
+
+.card-img-container {
+    max-width: 45%;
+}
+
+.card-img {
+    object-fit: cover;
+    border-radius: 8px
+}
+
