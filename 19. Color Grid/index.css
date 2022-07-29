@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+
+.box1 {
+  background-color: #F5C6D6;
+  grid-column: 1 / -1;
+}
+
+.box2 {
+  background-color: #EE2E84;
+}
+
+.box3 {
+  background-color: #85CFD8;
+  grid-column: span 2;
+}
+
+.box4 {
+  background-color: #8DC63F;
+  grid-column: span 3;
+}
+
+.box5 {
+  background-color: #E76E34;
+}
+
