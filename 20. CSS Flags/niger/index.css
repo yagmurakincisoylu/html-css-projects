@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 700px;
+  height: 600px;
+  display: grid;
+  background-color: #FFFFFF;
+}
+
+.color-orange {
+  background-color: #E15307;
+}
+
+.box-orange {
+  height: 200px;
+  align-self: flex-start;
+}
+
+.circle-orange {
+  width: 150px;
+  height: 150px;
+  place-self: center;
+  border-radius: 100%;
+}
+
+.color-green {
+  background-color: #10AF2A;
+}
+
+.box-green {
+  height: 200px;
+  align-self: flex-end;
+}
+
+
