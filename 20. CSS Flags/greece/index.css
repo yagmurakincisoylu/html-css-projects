@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 540px;
+  height: 360px;
+  display: grid;
+  background-color: #FFFFFF;
+  position: relative;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  height: 200px;
+  width: 200px;
+  background-color: #FFFFFF;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 40px;
+  z-index: 100;
+}
+
+.color-white {
+  background-color: #FFFFFF;
+}
+
+.color-blue {
+  background-color: #0E5FAE;
+}
+
+.box-blue {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+/* 
+Greece
+White: #FFFFFF
+Blue: 
+Aspect Ratio: 2:3 */
