@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+.color-white {
+  background-color: #FFFFFF;
+}
+
+.color-red {
+  background-color: #FF0002;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
