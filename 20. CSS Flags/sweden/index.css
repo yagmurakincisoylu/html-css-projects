@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 400px;
+  height: 250px;
+  display: grid;
+}
+
+.color-blue {
+  background-color: #0269A6;
+}
+
+.color-yellow {
+  background-color: #FECC00;
+}
+
+.span-col-2 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.span-col-5 {
+  grid-column: span 5;
+  grid-row: span 4;
+}
+
+.span-col-9 {
+  grid-column: span 9;
+  grid-row: span 4;
+}
+
+.span-col-16 {
+  grid-column: span 16;
+  grid-row: span 2;
+}
