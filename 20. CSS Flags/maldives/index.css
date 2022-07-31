@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 720px;
+  height: 480px;
+  display: grid;
+  place-content: center;
+  background-color: #D31133;
+}
+
+.center {
+  width: 480px;
+  height: 240px;
+  display: grid;
+  background-color: #007E39;
+  position: relative;
+  z-index: 1;
+}
+
+.crescent {
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 58%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.crescent-white {
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+.crescent-green {
+  background-color: #007E39;
+  z-index: 1000;
+  left: 64%;
+}
+
+
+
+/* 
+Maldives
+Red: #
+Green: 
+White: #FFFFFF
+Aspect Ratio: 2:3 */
