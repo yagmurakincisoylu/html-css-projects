@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  display: grid;
+}
+
+.color-red {
+  background-color: #CE1127;
+  grid-row: span 6;
+}
+
+.color-white {
+  background-color: #FFFFFF;
+  grid-row: span 1;
+}
+
+.color-blue {
+  background-color: #0D1D8B;
+  grid-row: span 4;
+}
+
+.color-green {
+  background-color: #3B7827;
+  grid-row: span 6;
+}
+
