@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  place-content: center;
+  background-color: #FFFFFF;
+}
+
+.color-red {
+  background-color: #BC022C;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+
